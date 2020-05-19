@@ -1,19 +1,15 @@
 class Solution:
-    def strStr(self, haystack: str, needle: str) -> int:
-        
+    def strStr(self, haystack: str, needle: str) -> int:        
         if needle == '':
-            return 0
-        
+            return 0        
         hl = len(haystack)
         nl = len(needle)
-        t = 0
-        
+        t = 0        
         while t  <= hl - nl:
             if needle == haystack[t:nl+t]:                
                 return t
             else:
-                t += 1
-                
+                t += 1                
         return -1
         
 '''
